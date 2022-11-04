@@ -32,3 +32,18 @@ animate1.forEach((animate)=>{
     observer.observe(animate);
 });
 
+//progress bar
+
+const progressbar = document.getElementById('progress-bar');
+
+const section = document.getElementById('progress');
+
+const animateProgressBar = () =>{
+    let scrollDistance = section.getBoundingClientRect().top;
+    let progressWidth = (scrollDistance / (section.getBoundingClientRect().height - document.documentElement.clientHeight))*100;
+    let value = Math.abs(Math.floor(progressWidth));
+    progressbar.style.width = value +"%"; 
+}
+
+window.addEventListener('scroll',animateProgressBar);
+
