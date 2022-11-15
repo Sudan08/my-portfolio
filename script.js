@@ -47,3 +47,14 @@ const animateProgressBar = () =>{
 
 window.addEventListener('scroll',animateProgressBar);
 
+//darkmode
+
+const togglebtn = document.getElementById('mode');
+
+
+
+togglebtn.addEventListener('change',function(){
+    document.querySelector('.introduction').classList.toggle('gradient');
+    document.body.classList.toggle('dark');
+})
+

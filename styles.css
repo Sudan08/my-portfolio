@@ -4,17 +4,22 @@
 }
 
 .introduction {
-    background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(18, 17, 74, 0.10437678489364499) 0%, rgba(235, 235, 235, 1) 10%, rgb(251, 150, 55) 100%);
     height: 100vh
 }
-
+.dark{
+    background: rgb(0, 0, 0);
+    color: white;
+}
 
 .fadeup-animate{
     animation: slide-up 2s;
 }
 
 
+.gradient{
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(18, 17, 74, 0.10437678489364499) 0%, rgb(0, 0, 0) 10%, rgb(251, 150, 55) 100%);
+}
 
 .box-1 {
     height: 85vh;
